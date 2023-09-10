@@ -58,8 +58,8 @@ export default function Pricing() {
             </p>
           </div>
           <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
-            {plans.map((plan) => (
-              <PricingCards {...plan} />
+            {plans.map((plan, index) => (
+              <PricingCards key={index} {...plan} />
             ))}
           </div>
         </div>

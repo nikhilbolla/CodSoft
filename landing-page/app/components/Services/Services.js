@@ -45,8 +45,8 @@ export default function Services() {
             </div>
           </div>
           <div className="grid gap-x-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-12">
-           {services.map( service => (
-            <ServiceCards {...service}/>
+           {services.map( (service, index) => (
+            <ServiceCards key={index} {...service}/>
            ) )}
           </div>
         </section>

@@ -15,9 +15,9 @@ export default function PricingCards({heading, description, price, features}) {
                   <span className="text-gray-500 ">/month</span>
               </div>
               <ul role="list" className="mb-8 space-y-4 ">
-                  {features.map( feature => (
-                    <Features feature= {feature}/>
-                  ))}
+              {features.map((feature, index) => (
+        <Features key={index} feature={feature} />
+      ))}
               </ul>
               <Button primary> Get Started </Button>
           </div>
