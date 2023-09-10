@@ -41,11 +41,11 @@ export default function NavBar() {
           </div>
           <div>
             <ul className="md:flex md:gap-6 text-sm">
-              <NavPills link={"#header"}>HOME</NavPills>
-              <NavPills link={"#services"}>SERVICES</NavPills>
-              <NavPills link={"#pricing"}>PRICING</NavPills>
-              <NavPills link={"#aboutus"}>ABOUT US</NavPills>
-              <NavPills link={"#contantus"}>CONTACT US</NavPills>
+              <NavPills link={"#header"}  onclick={() => {setState("hidden")}}>HOME</NavPills>
+              <NavPills link={"#services"}  onclick={() => {setState("hidden")}}>SERVICES</NavPills>
+              <NavPills link={"#pricing" } onclick={() => {setState("hidden")}}>PRICING</NavPills>
+              <NavPills link={"#aboutus"}  onclick={() => {setState("hidden")}}>ABOUT US</NavPills>
+              <NavPills link={"#contantus"}  onclick={() => {setState("hidden")}}>CONTACT US</NavPills>
             </ul>
           </div>
         </div>
