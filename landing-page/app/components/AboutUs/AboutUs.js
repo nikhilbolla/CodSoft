@@ -35,8 +35,8 @@ export default function AboutUs() {
               enim ad minim veniam
             </p>
             <ul className="mb-10">
-                {points.map( point => (
-                    <List point={point} />
+                {points.map( (point, index) => (
+                    <List key={index} point={point} />
                 ))}
             </ul>
             <Button>Learn More</Button>
